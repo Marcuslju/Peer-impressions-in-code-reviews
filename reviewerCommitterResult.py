@@ -19,9 +19,7 @@ import matplotlib.dates as mdates
 from datetime import date
 from dateutil.relativedelta import relativedelta
 
-##################################### Ändrar created columnen i reviews till datetime
 codeReviews_accountMapping['Created'] = pd.to_datetime(codeReviews_accountMapping['Created'])
-##################################### Ändrar created columnen i reviews till datetime
 
 
 changesReviews['Created_y'] = pd.to_datetime(changesReviews['Created_y'])
