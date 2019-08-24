@@ -5,7 +5,8 @@ Information about the files:
 * fileHandler: Reads in the csv files necessary to create the graphs. The csv files that I used in the thesis cannot be     provided because of privacy issues of Ericssons employees.
   
 * information-about-dataset: Little information about the dataset
-suveyResult: Creates graphs concerning the survey.
+
+* suveyResult: Creates graphs concerning the survey.
 
 * reviewerCommitterResult: Creates graphs concerning the reviewer-committer pair colloboration.
 
