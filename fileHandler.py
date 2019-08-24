@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-##################################### Reads in the files
+##################################### Reads the files
 survey = pd.read_csv("Code_review_perception.csv", delimiter=",")
 survey.columns = ['id', 'start_time', 'completion_time', 'none', 'name', 'email', 'years_in_pos', 'city', 'average_contributing_month', 'percent_code_review', 'rewards', 'code_reviews_beneficial', 'hours_reviewing_others_Inweek', 'week_reviewing_others_total', 'balance_spent_between_reviewing_and_commit', 'face_to_face_amount', 'perception_of_author_neg', 'perception_of_author_pos']
 
@@ -11,7 +11,7 @@ surveyEmails = pd.read_csv("surveyEmails.csv", delimiter=";")
 accountMapping= pd.read_csv("account_mapping.csv", delimiter=",")
 df_code_changes = pd.read_csv("gerrit_changes.csv", delimiter=";")
 df_code_reviews = pd.read_csv("gerrit_reviews.csv", delimiter=";")
-##################################### Reads in the files
+##################################### Reads the files
 
 changesReviews = pd.merge(df_code_changes, df_code_reviews, left_on='ID', right_on='Change_ID')
 changesReviews = changesReviews.drop(['ID'], axis=1)
